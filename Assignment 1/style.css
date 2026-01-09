@@ -179,6 +179,7 @@
 .knowledge-list{
   list-style: none;
 }
+
 .knowledge-image {
   margin-right: 15px;
   vertical-align: middle;
@@ -188,7 +189,6 @@
   margin-top: 120px;
   background: white;
   align-items: center;
-  justify-content: center;
   margin-bottom: 120px
 }
 .chlg-section >h1 {
@@ -239,3 +239,13 @@
   margin: 0;
 }
 
+
+.btn-hover-effect {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-hover-effect:hover {
+  box-shadow: 0px 8px 15px #0000001a;
+  transform: translateY(-2px); 
+}
