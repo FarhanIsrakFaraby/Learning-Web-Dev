@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice 2</title>
+    <style>
+        .container{
+            border: 1px solid brown;
+            display: grid;
+            justify-content: space-between;
+            align-items: flex-end;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 5px;
+            color: black;
+            /* text-align: center; */
+        }
+        .first{
+            /* border: 1px solid aqua; */
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            margin-left: -560px;
+            margin-right: 900px;
+        }
+        .second{
+            /* border: 1px solid greenyellow; */
+            display: grid;
+            margin-top: -20px;
+            gap: 15px;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .one{
+            border-radius: 8px;
+            background-color: tomato;
+            height: 30vh;
+            width: 40vh;
+        }
+        .two{
+            border-radius: 8px;
+            background-color: orange;
+        }
+        .three{
+            border-radius: 8px;
+            background-color: purple;
+        }
+        .four{
+            border-radius: 8px;
+            background-color: gray;
+            height: 145px;
+        }
+        @media screen and (max-width:576px) {
+            .container{
+                display: grid;
+                /* justify-content: center; */
+                /* align-items: center; */
+                grid-template-columns: repeat(1, 1fr);
+                grid-column: auto;
+                /* margin-left: 20px; */
+                /* height: 200px; */
+                /* width: -300px; */
+            }
+            .first{
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+                /* height: 100px; */
+                /* height: 200px;
+                width: 200px; */
+                margin-left: 20px;
+                margin-right: 0px;
+            }
+            .one{
+                height: 20vh;
+                margin-bottom: -10px;
+            }
+            .second{
+                /* margin-top: 80px; */
+                grid-template-columns: repeat(1, 1fr);
+            }
+            .two{
+                height: 20vh;
+            }
+            .three{
+                margin-top: -50px;
+                height: 20vh;
+            }
+            .four{
+                margin-top: -20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p class="one">1</p>
+        <div class="first">
+            <p class="two">2</p>
+            <div class="second">
+                <p class="three">3</p>
+                <div>
+                    <p class="four">4</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
