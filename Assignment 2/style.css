@@ -1,4 +1,4 @@
-*{
+* {
   max-width: 1600px;
   margin: auto;
 }
@@ -19,6 +19,25 @@
       rgba(145, 0, 248, 1)
     )
   );
-    /* width: 340px;
+  /* width: 340px;
     height: 350px; */
 }
+.hero-bg-image {
+  background: url("./images/assets/hero-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 675px;
+}
+
+/* .spotify {
+  background: var(
+    --Linear,
+    linear-gradient(
+      47.64deg,
+      rgba(247, 233, 63, 1),
+      rgba(251, 9, 180, 1),
+      rgba(145, 0, 248, 1)
+    )
+  );
+} */
