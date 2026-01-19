@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en" class="bg-[#412567]">
+<html lang="en" class="bg-[#1b0e32]">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,7 @@
         <p>Host</p>
       </div>
       <div
-        class="pt-[12px] pb-[12px] pr-[16px] pl-[16px] rounded-4xl font-bold flex gap-2 bg-gradient-to-r from-[rgba(145,0,248,1)] via-[rgba(251,9,180,1)] to-[rgba(247,233,63,1)]"
+        class="pt-[12px] pb-[12px] pr-[16px] pl-[16px] rounded-4xl font-bold flex gap-2 bg-linear-60 from-[rgba(247,233,63,1)] via-[rgba(251,9,180,1)] to-[rgba(145,0,248,1)]"
       >
         <button class="text-white">Subscribe</button>
         <img src="./images/assets/ArrowRight.png" alt="" />
@@ -33,26 +33,138 @@
     <div>
       <div class="hero-bg-image relative">
         <img
-          class="micro absolute right-[41.5%] top-[14%] pt-[68px] pb-[81px] pr-[75px] pl-[75px] border-2 border-gray-400 rounded-[200px]"
+          class="micro aspect-square absolute right-[41.5%] top-[14%] pt-[68px] pb-[81px] pr-[75px] pl-[75px] border-2 border-gray-400 rounded-[200px]"
           src="./images/assets/microphone.png"
           alt=""
         />
-        <p class="text-5xl font-bold text-white absolute right-[43%] top-[66%]">TechWave</p>
-        <p class="text-white font-thin text-[12px] absolute right-[38%] top-[75%]">
+        <p class="text-5xl font-bold text-white absolute right-[43%] top-[66%]">
+          TechWave
+        </p>
+        <p
+          class="text-white font-thin text-[12px] absolute right-[38%] top-[75%]"
+        >
           Your daily dose of tech insights, productivity hacks, and personal
           growth
         </p>
         <div class="absolute right-[38%] top-[79%] flex items-center gap-3">
-          <button class="flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#fcb045] via-[#fd1d9f] to-[#833ab4] text-white text-[14px] font-semibold shadow-lg">
-            <img class="w-5 h-5" src="./images/assets/spotify.png" alt="Spotify">
+          <button
+            class="flex items-center gap-2 px-5 py-3 rounded-full bg-gradient-to-r from-[#fcb045] via-[#fd1d9f] to-[#833ab4] text-white text-[14px] font-semibold shadow-lg"
+          >
+            <img
+              class="w-5 h-5"
+              src="./images/assets/spotify.png"
+              alt="Spotify"
+            />
             Listen on Spotify
           </button>
-          <button class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#00e981] text-[#00e981] text-[14px] font-semibold bg-[#0e0f24]/40 backdrop-blur-sm">
-            <img class="w-5 h-5" src="./images/assets/message.png" alt="Subscribe">
+          <button
+            class="flex items-center gap-2 px-5 py-3 rounded-full border border-[#00e981] text-[#00e981] text-[14px] font-semibold bg-[#0e0f24]/40 backdrop-blur-sm"
+          >
+            <img
+              class="w-5 h-5"
+              src="./images/assets/message.png"
+              alt="Subscribe"
+            />
             Subscribe
           </button>
         </div>
-        <p class="absolute text-black font-bold bg-green-500 pt-[8px] pb-[8px] pr-[16px] pl-[16px] rounded-[20vh] top-[15%] right-[41%]">NEW</p>
+        <p
+          class="absolute text-black font-bold bg-green-500 pt-[8px] pb-[8px] pr-[16px] pl-[16px] rounded-[20vh] top-[15%] right-[41%]"
+        >
+          NEW
+        </p>
+      </div>
+    </div>
+
+    <!-- Main Section -->
+
+    <div class="flex flex-col text-white gap-3 pb-[80px]">
+      <p class="text-5xl p-2">About the Podcast</p>
+      <p class="text-[12px] font-thin">
+        TechWave is your go-to podcast for staying ahead in the fast-paced world
+        of technology.
+      </p>
+      <p class="text-[12px] font-thin">
+        We break down complex topics into digestible insights, explore
+        productivity strategies that actually work,
+      </p>
+      <p class="text-[12px] font-thin">
+        and share stories of personal growth from industry leaders.
+      </p>
+      <p class="text-[12px] font-thin p-4">
+        Join thousands of young professionals and tech enthusiasts who start
+        their day with TechWave.
+      </p>
+    </div>
+    <div class="pt-[80px] grid grid-cols-4 text-white pb-[120px]">
+      <p class="grid text-green-500 font-bold text-4xl gap-[16px]">
+        150K+
+        <span class="text-white text-[12px] font-thin">Monthly Listeners</span>
+      </p>
+      <p class="grid text-green-500 font-bold text-4xl gap-[16px]">
+        200+
+        <span class="text-white text-[12px] font-thin">Episodes Published</span>
+      </p>
+      <p class="grid text-green-500 font-bold text-4xl gap-[16px]">
+        4.9★<span class="text-white text-[12px] font-thin">Average Rating</span>
+      </p>
+      <p class="grid text-green-500 font-bold text-4xl gap-[16px]">
+        50+
+        <span class="text-white text-[12px] font-thin">Industry Experts</span>
+      </p>
+    </div>
+
+    <!-- Confidence Section  -->
+
+    <div class="pt-[120px] bg-[#230f3c] text-white grid">
+      <p class="text-4xl font-bold pb-[40px]">Why Choose TechWave</p>
+      <div
+        class="grid grid-cols-3 justify-start h-auto w-[1000px] p-15 gap-[52px]"
+      >
+        <div
+          class="row-span-2 bg-[#2b0f4c] p-12 rounded-[20px] h-[50vh] items-center"
+        >
+          <img src="./images/assets/headphone.png" alt="" class="" />
+          <p class="font-bold text-2xl">Premium Audio Quality</p>
+          <p class="font-thin text-sm">
+            Experience crystal-clear sound with professional-grade recording
+            equipment and expert audio engineering. Every episode is mastered
+            for optimal listening across all devices and platforms.
+          </p>
+        </div>
+        <div class="col-span-2 gap-3 bg-[#2b0f4c] p-12 rounded-[20px]">
+          <img src="./images/assets/device.png" alt="" class="" />
+          <p class="font-bold text-2xl">Mobile Friendly</p>
+          <p class="font-thin text-sm">
+            Listen on the go with seamless mobile experience and offline
+            downloads.
+          </p>
+        </div>
+        <div class="col-span-2 bg-[#2b0f4c] p-12 rounded-[20px]">
+          <img src="./images/assets/location.png" alt="" />
+          <p>Global Community</p>
+          <p>
+            Connect with tech enthusiasts from over 120 countries worldwide.
+          </p>
+        </div>
+        <div class="col-span-2 bg-[#2b0f4c] p-12 rounded-[20px]">
+          <img src="./images/assets/Icon (Stroke).png" alt="" />
+          <p>Exclusive Interviews</p>
+          <p>
+            Get unprecedented access to industry titans, startup founders, and
+            tech visionaries. Our host secures exclusive conversations you won't
+            find anywhere else, diving deep into their journeys, failures, and
+            success strategies.
+          </p>
+        </div>
+        <div class="bg-[#2b0f4c] p-12 rounded-[20px]">
+          <img src="./images/assets/resource.png" alt="" />
+          <p>Rich Resources</p>
+          <p>
+            Access show notes, transcripts, and additional learning materials
+            for every episode.
+          </p>
+        </div>
       </div>
     </div>
   </body>
