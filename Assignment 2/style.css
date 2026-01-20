@@ -28,3 +28,10 @@
   height: 675px;
 }
 
+     @media (max-width: 768px) {
+        .hero-bg-image {
+          background-size: cover !important;
+          height: auto !important;
+          padding-bottom: 3rem;
+        }
+      }
