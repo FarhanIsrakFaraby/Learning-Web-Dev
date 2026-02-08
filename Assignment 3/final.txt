@@ -1,0 +1,100 @@
+Problem 1: 
+
+function newPrice(currentPrice, discount) {
+    if (typeof currentPrice !== 'number' || typeof discount !== 'number') {
+        return "Invalid";
+    }
+
+    if (discount < 0 || discount > 100) {
+        return "Invalid";
+    }
+
+    let discountAmount = (currentPrice * discount) / 100;
+    let finalPrice = currentPrice - discountAmount;
+
+    return finalPrice.toFixed(3);
+}
+
+
+Problem 2: 
+
+function validOtp(otp) {
+    if (typeof otp !== 'string') {
+        return "Invalid";
+    }
+
+    return otp.length === 8 && otp.startsWith("ph-");
+}
+
+
+Problem 3: 
+
+function finalScore(omr) {
+    if (typeof omr !== 'object' || omr === null || Array.isArray(omr)) {
+        return "Invalid";
+    }
+
+    if (typeof omr.right !== 'number' || typeof omr.wrong !== 'number' || typeof omr.skip !== 'number') {
+        return "Invalid";
+    }
+
+    if (omr.right + omr.wrong + omr.skip !== 100) {
+        return "Invalid";
+    }
+
+    let score = omr.right - (omr.wrong * 0.5);
+    return Math.round(score);
+}
+
+
+Problem 4: 
+
+function gonoVote(array) {
+    if (!Array.isArray(array)) {
+        return "Invalid";
+    }
+
+    let haCount = 0;
+    let naCount = 0;
+
+    for (let vote of array) {
+        if (vote === "ha") {
+            haCount++;
+        } else if (vote === "na") {
+            naCount++;
+        }
+    }
+
+    if (haCount > naCount) {
+        return true;
+    } else if (haCount === naCount) {
+        return "equal";
+    } else {
+        return false;
+    }
+}
+
+
+Problem 5: 
+
+function analyzeText(str) {
+    if (typeof str !== 'string' || str.trim().length === 0) {
+        return "Invalid";
+    }
+
+    let words = str.split(' ');
+    let maxWord = "";
+
+    for (let word of words) {
+        if (word.length > maxWord.length) {
+            maxWord = word;
+        }
+    }
+
+    let totalLength = str.split(' ').join('').length;
+
+    return {
+        longwords: maxWord,
+        token: totalLength
+    };
+}
